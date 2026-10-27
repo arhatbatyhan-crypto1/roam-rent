@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#1f3b2e">
+    <meta name="description" content="Rent reliable tents, packs and trail essentials for exactly the days you need.">
+    <title>Roam / Rent — Outdoor gear, on your terms</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Roam Rent home">
+        <span class="brand-name">ROAM / RENT</span>
+        <span class="brand-note">GO LIGHT. GO FAR.</span>
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation">
+        <span class="menu-glyph" aria-hidden="true">☰</span><span class="menu-label">Menu</span>
+      </button>
+      <nav class="primary-navigation" id="primary-navigation" aria-label="Main navigation">
+        <ul class="nav-links">
+          <li><a href="#inventory" data-filter-link="sleep">Tents</a></li>
+          <li><a href="#inventory" data-filter-link="carry">Backpacks</a></li>
+          <li><a href="#safety">Terms</a></li>
+          <li><a href="#inventory">Price list</a></li>
+        </ul>
+        <a class="button button-small nav-cta" href="#rental">Plan a rental</a>
+      </nav>
+    </header>
+    <main id="main">
+      <section class="hero" id="top" aria-labelledby="hero-title">
+        <header class="hero-copy">
+          <p class="eyebrow eyebrow-light">The outdoors, on your terms</p>
+          <h1 id="hero-title">Don’t Buy Gear — Rent It!</h1>
+          <p class="hero-intro">A lighter way to get out there. Choose reliable tents, packs and trail essentials, then rent for exactly the days you need.</p>
+          <a class="button hero-button" href="#inventory">Choose equipment <span aria-hidden="true">↗</span></a>
+          <ul class="trust-points" aria-label="Rental benefits"><li>Cleaned &amp; checked</li><li>Local pick-up</li></ul>
+        </header>
+        <figure class="hero-art">
+          <img src="images/alpine-landscape.svg" alt="Illustrated campsite beneath layered mountain peaks">
+          <figcaption>Make room for the view.</figcaption>
+        </figure>
+      </section>
+      <section class="inventory section-wrap" id="inventory" aria-labelledby="inventory-title">
+        <header class="section-heading">
+          <p class="eyebrow">Ready for the trail</p>
+          <h2 id="inventory-title">Gear that earns its miles</h2>
+          <p>Pick what you need. We’ll take care of the rest.</p>
+        </header>
+        <nav class="category-nav" aria-label="Filter equipment by category">
+          <button class="filter-chip is-selected" type="button" data-filter="all" aria-pressed="true">All gear</button>
+          <button class="filter-chip" type="button" data-filter="sleep" aria-pressed="false">Sleep</button>
+          <button class="filter-chip" type="button" data-filter="carry" aria-pressed="false">Carry</button>
+          <button class="filter-chip" type="button" data-filter="hike" aria-pressed="false">Hike</button>
+          <button class="filter-chip" type="button" data-filter="camp" aria-pressed="false">Camp</button>
+        </nav>
+        <ul class="inventory-grid">
+          <li><article class="product-card" data-category="sleep">
+            <figure class="product-art art-tent"><img src="images/tent.svg" alt=""></figure>
+            <p class="product-meta"><span>Field tested</span><span aria-label="Rated 4.9 out of 5">★ 4.9</span></p>
+            <h3>Summit 2P tent</h3>
+            <ul class="spec-list"><li><span>Weight</span><strong>2.4 kg</strong></li><li><span>Size</span><strong>210 × 130 × 105 cm</strong></li></ul>
+            <p class="product-price"><strong>₸12,000</strong><span> / item / day</span></p>
+            <label class="reserve-choice"><input class="gear-choice" type="checkbox" data-price="12000" value="summit-tent"><span>Add to rental</span></label>
+          </article></li>
+          <li><article class="product-card" data-category="carry">
+            <figure class="product-art art-pack"><img src="images/backpack.svg" alt=""></figure>
+            <p class="product-meta"><span>Field tested</span><span aria-label="Rated 4.9 out of 5">★ 4.9</span></p>
+            <h3>Ridge 38L pack</h3>
+            <ul class="spec-list"><li><span>Weight</span><strong>1.2 kg</strong></li><li><span>Size</span><strong>38 L · 56 × 30 cm</strong></li></ul>
+            <p class="product-price"><strong>₸4,500</strong><span> / item / day</span></p>
+            <label class="reserve-choice"><input class="gear-choice" type="checkbox" data-price="4500" value="ridge-pack"><span>Add to rental</span></label>
+          </article></li>
+          <li><article class="product-card" data-category="sleep">
+            <figure class="product-art art-bag"><img src="images/sleeping-bag.svg" alt=""></figure>
+            <p class="product-meta"><span>Field tested</span><span aria-label="Rated 4.9 out of 5">★ 4.9</span></p>
+            <h3>Alpine −5 sleeping bag</h3>
+            <ul class="spec-list"><li><span>Weight</span><strong>1.5 kg</strong></li><li><span>Comfort</span><strong>−5°C</strong></li></ul>
+            <p class="product-price"><strong>₸3,000</strong><span> / item / day</span></p>
+            <label class="reserve-choice"><input class="gear-choice" type="checkbox" data-price="3000" value="alpine-sleeping-bag"><span>Add to rental</span></label>
+          </article></li>
+          <li><article class="product-card" data-category="hike">
+            <figure class="product-art art-poles"><img src="images/trekking-poles.svg" alt=""></figure>
+            <p class="product-meta"><span>Field tested</span><span aria-label="Rated 4.9 out of 5">★ 4.9</span></p>
+            <h3>Carbon trekking poles</h3>
+            <ul class="spec-list"><li><span>Weight</span><strong>0.7 kg</strong></li><li><span>Length</span><strong>Adjustable 105–135 cm</strong></li></ul>
+            <p class="product-price"><strong>₸2,000</strong><span> / item / day</span></p>
+            <label class="reserve-choice"><input class="gear-choice" type="checkbox" data-price="2000" value="trekking-poles"><span>Add to rental</span></label>
+          </article></li>
+          <li><article class="product-card" data-category="camp">
+            <figure class="product-art art-cook"><img src="images/cook-kit.svg" alt=""></figure>
+            <p class="product-meta"><span>Field tested</span><span aria-label="Rated 4.9 out of 5">★ 4.9</span></p>
+            <h3>Backcountry cook kit</h3>
+            <ul class="spec-list"><li><span>Weight</span><strong>0.8 kg</strong></li><li><span>Capacity</span><strong>1.2 L · 2-person set</strong></li></ul>
+            <p class="product-price"><strong>₸3,500</strong><span> / item / day</span></p>
+            <label class="reserve-choice"><input class="gear-choice" type="checkbox" data-price="3500" value="cook-kit"><span>Add to rental</span></label>
+          </article></li>
+          <li><article class="product-card" data-category="hike">
+            <figure class="product-art art-lamp"><img src="images/headlamp.svg" alt=""></figure>
+            <p class="product-meta"><span>Field tested</span><span aria-label="Rated 4.9 out of 5">★ 4.9</span></p>
+            <h3>Trail headlamp</h3>
+            <ul class="spec-list"><li><span>Weight</span><strong>0.1 kg</strong></li><li><span>Output</span><strong>450 lm · USB-C</strong></li></ul>
+            <p class="product-price"><strong>₸1,500</strong><span> / item / day</span></p>
+            <label class="reserve-choice"><input class="gear-choice" type="checkbox" data-price="1500" value="trail-headlamp"><span>Add to rental</span></label>
+          </article></li>
+        </ul>
+      </section>
+      <section class="rental section-wrap" id="rental" aria-labelledby="rental-title">
+        <header class="section-heading">
+          <p class="eyebrow">Book by the day</p>
+          <h2 id="rental-title">Plan your rental</h2>
+          <p>Tell us when you’re going and we’ll calculate your rental total.</p>
+        </header>
+        <form class="rental-form" id="rental-form">
+          <fieldset class="date-fields">
+            <legend>Rental period</legend>
+            <label class="form-field" for="issue-date">Issue date<input id="issue-date" name="issueDate" type="date" required></label>
+            <label class="form-field" for="return-date">Return date<input id="return-date" name="returnDate" type="date" required></label>
+          </fieldset>
+          <fieldset class="contact-fields">
+            <legend>Contact details</legend>
+            <label class="form-field" for="contact-name">Contact person<input id="contact-name" name="name" type="text" autocomplete="name" placeholder="Your full name" required></label>
+            <label class="form-field" for="contact-email">Email address<input id="contact-email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required></label>
+            <label class="form-field" for="contact-phone">Phone number<input id="contact-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" placeholder="+7 (___) ___-__-__" pattern="[+0-9() -]{7,}" required></label>
+          </fieldset>
+          <p class="flex-note">✓ Dates flexible? We’ll confirm availability by phone.</p>
+          <button class="button calculate-button" type="submit">Calculate rental</button>
+          <p class="form-message" id="form-message" role="status" aria-live="polite"></p>
+        </form>
+        <aside class="price-summary" aria-labelledby="summary-title" aria-live="polite">
+          <p class="eyebrow eyebrow-light">Your estimate</p>
+          <h3 id="summary-title">Rental total</h3>
+          <p class="total-price" id="total-price">₸0</p>
+          <p class="summary-copy" id="summary-copy">Choose dates and equipment to see your total. Pricing is per item, per day.</p>
+          <p class="summary-note">1 day minimum <span aria-hidden="true">·</span> No hidden fees</p>
+        </aside>
+      </section>
+    </main>
+    <footer class="site-footer" id="safety">
+      <section class="footer-about" aria-labelledby="footer-brand">
+        <h2 id="footer-brand" class="brand-name">ROAM / RENT</h2>
+        <p>Follow local Emergency Situations Ministry guidance. Check the weather, route conditions and access rules before every trip.</p>
+      </section>
+      <nav class="footer-navigation" aria-label="Footer navigation">
+        <ul><li><a href="https://www.openstreetmap.org/" target="_blank" rel="noreferrer">Map &amp; tracks</a></li><li><a href="#rental">Rental terms</a></li></ul>
+      </nav>
+      <button class="theme-toggle" type="button" id="theme-toggle" aria-pressed="false"><span class="theme-indicator" aria-hidden="true"></span><span>Light / Forest dark</span></button>
+    </footer>
+  </body>
+</html>
